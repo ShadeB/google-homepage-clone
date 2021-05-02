@@ -1,0 +1,325 @@
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	font-family: Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.4rem;
+	background-color: #fff;
+	color: rgb(63, 62, 62);
+}
+
+ul {
+	list-style: none;
+	list-style-type: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	background: none;
+}
+
+main {
+	text-align: center;
+}
+
+a {
+	color: inherit;
+}
+
+input {
+	outline: none;
+}
+
+li:hover {
+	text-decoration: underline;
+}
+
+label {
+	display: none;
+}
+
+.header-links__container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1rem 0.5rem;
+}
+
+.header-links__container li {
+	padding: 0 1rem;
+	text-transform: capitalize;
+}
+
+a.google-apps-link {
+	display: block;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+a.google-apps-link > svg {
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+a.google-apps-link > span {
+	display: none;
+}
+
+a.account-link {
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 3rem;
+	height: 3rem;
+}
+
+a.account-link img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a.account-link span {
+	display: none;
+}
+
+.logo {
+	width: 16rem;
+	height: 5.5rem;
+	margin: 2rem auto;
+}
+
+.logo svg {
+	width: 100%;
+	height: 100%;
+}
+
+form {
+	padding: 0 1rem;
+}
+
+.search-bar {
+	display: flex;
+	padding: 0 1rem;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 75rem;
+	border-radius: 5rem;
+	border: 0.1rem solid rgba(0, 0, 0, 0.15);
+}
+
+.search-bar:hover {
+	box-shadow: -1px 2px 6px -3px rgb(0 0 0 / 50%);
+}
+
+.search-bar:focus {
+	box-shadow: -1px 2px 6px -3px rgb(0 0 0 / 50%);
+}
+
+.search-input {
+	margin: 1rem;
+	border: none;
+	width: 100%;
+	font-size: 1.6rem;
+	outline: none;
+}
+
+.search-bar-icon {
+	display: block;
+	margin: 0.5rem 0;
+	width: 2.7rem;
+	height: 2.7rem;
+}
+
+.search-bar-icon svg {
+	width: 100%;
+	height: 100%;
+}
+
+.search-bar-icon span {
+	display: none;
+}
+
+.search-button {
+	fill: rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+	display: none;
+	margin-top: 2.5rem;
+}
+
+.action-button {
+	padding: 1rem;
+	background-color: rgba(0, 0, 0, 0.033);
+}
+
+.languages-offered {
+	margin-bottom: 3rem;
+}
+
+.languages-offered span {
+	display: block;
+	color: black;
+	padding: 1.5rem 0;
+}
+
+.languages-offered a {
+	padding: 0 0.7rem;
+	color: #5a5af2;
+}
+
+footer {
+	font-size: 1.4rem;
+	color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.053);
+	text-transform: capitalize;
+}
+
+.user-country {
+	font-size: 1.7rem;
+	padding: 1rem;
+	border-bottom: 0.06rem solid rgba(0, 0, 0, 0.15);
+}
+
+.mobile-footer-content {
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.mobile-footer-content :first-child {
+	margin-bottom: 1.5rem;
+}
+
+.mobile-footer-content a {
+	padding: 1rem;
+}
+
+.mobile-footer-content:nth-child(2) {
+	margin-top: 2rem;
+}
+
+.desktop-footer-content {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	nav {
+		padding-bottom: 0;
+	}
+
+	main {
+		font-size: 1.8rem;
+	}
+
+	.action-button:last-of-type {
+		margin-left: 2rem;
+	}
+
+	.languages-offered span {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header-links__container {
+		padding: 1.5rem 0;
+	}
+
+	a.google-apps-link > svg {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	a.account-link svg {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.logo {
+		height: 9rem;
+		width: 24rem;
+	}
+
+	.search-input {
+		font-size: 2rem;
+	}
+
+	.voice-search {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+
+	.buttons {
+		display: block;
+	}
+
+	.action-button {
+		border-radius: 5px;
+		font-size: 1.5rem;
+	}
+
+	.action-button:hover {
+		border: 0.1rem solid rgba(0, 0, 0, 0.15);
+	}
+
+	.search-bar {
+		padding: 0 1.5rem;
+	}
+
+	.search-bar-icon {
+		width: 2rem;
+		height: 2rem;
+		margin: auto;
+	}
+
+	.voice-search {
+		width: 2.5rem;
+		height: 2.5rem;
+		margin: auto;
+	}
+
+	.languages-offered {
+		font-size: 1.4rem;
+		margin: 3rem 0;
+	}
+
+	.user-country {
+		padding: 2.5rem;
+	}
+
+	.mobile-footer-content {
+		display: none;
+	}
+
+	.desktop-footer-content {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem 3.5rem;
+	}
+
+	.desktop-footer-content ul {
+		display: flex;
+	}
+
+	.footer-link {
+		padding: 1rem;
+	}
+}
